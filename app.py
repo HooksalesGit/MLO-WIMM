@@ -1,3 +1,4 @@
+ codex/create-product-requirements-document-for-mortgage-dashboard-ur27x2
 """Streamlit UI for mortgage payment and DTI calculators."""
 
 import streamlit as st
@@ -65,3 +66,10 @@ if submitted:
     )
     st.subheader("DTI Ratios")
     st.write({"Front-end": fe, "Back-end": be})
+=======
+"""Streamlit entry point."""
+
+import streamlit as st
+
+st.title("Mortgage Income & DTI Dashboard")
+ main

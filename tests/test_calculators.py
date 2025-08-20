@@ -64,7 +64,9 @@ def test_usda():
     assert result["housing_total"] == pytest.approx(1997.93, rel=1e-4)
 
 
+
 def test_compute_dti():
     fe, be = calculators.compute_dti(8000, 2000, 500)
     assert fe == pytest.approx(0.25, rel=1e-4)
     assert be == pytest.approx(0.3125, rel=1e-4)
+
