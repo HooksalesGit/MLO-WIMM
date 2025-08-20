@@ -62,3 +62,11 @@ def test_usda():
     assert result["upfront_fee"] == pytest.approx(2500.0, rel=1e-4)
     assert result["mi"] == pytest.approx(73.6458, rel=1e-4)
     assert result["housing_total"] == pytest.approx(1997.93, rel=1e-4)
+
+
+
+def test_compute_dti():
+    fe, be = calculators.compute_dti(8000, 2000, 500)
+    assert fe == pytest.approx(0.25, rel=1e-4)
+    assert be == pytest.approx(0.3125, rel=1e-4)
+
